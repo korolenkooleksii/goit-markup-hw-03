@@ -19,7 +19,7 @@ body {
   list-style: none;
 }
 
-/* ----- убираем подчеркивания ---------  */
+/* ----- убираем подчеркивания в ссылках---------  */
 
 .link {
   text-decoration: none;
@@ -30,8 +30,8 @@ body {
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -90,8 +90,7 @@ body {
 
 .hero-button {
   background: var(--accent-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -123,7 +122,6 @@ body {
 }
 
 .feature-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -139,8 +137,8 @@ body {
 
 /* -------------- WORK ---------------- */
 
-.work-title {
-  font-weight: 700;
+.work-title,
+.team-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -153,14 +151,6 @@ body {
   background-color: var(--primary-bgr-color);
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -170,7 +160,6 @@ body {
 }
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -181,8 +170,7 @@ body {
 /* ------------- FILTERS ------------ */
 
 .filters-button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -208,7 +196,6 @@ body {
 }
 
 .portfolio-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
