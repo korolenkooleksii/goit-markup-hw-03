@@ -14,9 +14,21 @@ body {
   color: var(--primary-text-color);
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  border: 2px dashed red;
+}
+
 /* ------ убираем точки в списке --------- */
 .list {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 /* ----- убираем подчеркивания в ссылках---------  */
@@ -75,20 +87,32 @@ body {
 /* ------- HERO ------- */
 
 .hero {
+  margin-bottom: 94px;
+  
+  text-align: center;
   background-color: var(--secondary-bgr-color);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
-  text-align: center;
+
   text-transform: uppercase;
 }
 
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  display: inline-block;
+  border: none;
+
   background: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -96,9 +120,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
-  text-align: center;
+
   cursor: pointer;
-  border: none;
 }
 
 .hero-button:hover,
@@ -107,6 +130,12 @@ body {
 }
 
 /* ------- FEATURE ------- */
+
+.feature {
+  margin-top: 0;
+  margin-bottom: 94px;
+  text-align: center;
+}
 
 .visually-hidden {
   position: absolute;
@@ -122,6 +151,11 @@ body {
 }
 
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  background-color: tomato;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -129,6 +163,11 @@ body {
 }
 
 .feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background-color: yellowgreen;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -170,16 +209,22 @@ body {
 /* ------------- FILTERS ------------ */
 
 .filters-button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  min-width: 73px;
+  text-align: center;
+  border: none;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+
   letter-spacing: 0.03em;
   background: var(--primary-bgr-color);
   color: var(--primary-text-color);
   cursor: pointer;
-  border: none;
 }
 
 .filters-button:hover,
