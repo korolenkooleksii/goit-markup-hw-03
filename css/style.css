@@ -87,8 +87,9 @@ body {
 /* ------- HERO ------- */
 
 .hero {
+  margin-top: 0;
   margin-bottom: 94px;
-  
+
   text-align: center;
   background-color: var(--secondary-bgr-color);
 }
@@ -154,8 +155,6 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
 
-  background-color: tomato;
-
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -166,8 +165,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  background-color: yellowgreen;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -175,6 +172,16 @@ body {
 }
 
 /* -------------- WORK ---------------- */
+
+.work {
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+
+.work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 
 .work-title,
 .team-title {
@@ -184,13 +191,36 @@ body {
   letter-spacing: 0.03em;
 }
 
+.work-list-item > img {
+  display:block
+}
+
 /* ---------- TEAM ------------ */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-align: center;
+
   background-color: var(--primary-bgr-color);
 }
 
+.team-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  outline: 2px solid tomato;
+}
+
 .team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  background-color: yellowgreen;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -199,6 +229,11 @@ body {
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  outline: 2px solid tomato;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -206,6 +241,13 @@ body {
   color: var(--secondary-text-color);
 }
 
+.team-list-item > img {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  outline: 2px solid tomato;
+}
 /* ------------- FILTERS ------------ */
 
 .filters-button {
