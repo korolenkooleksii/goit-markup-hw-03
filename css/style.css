@@ -38,6 +38,8 @@ body {
 }
 
 .section {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -137,9 +139,7 @@ body {
 
 /* ------- FEATURE ------- */
 
-.feature {
-  margin-top: 0;
-  margin-bottom:0;
+.feature-list {
   text-align: center;
 }
 
@@ -168,7 +168,7 @@ body {
 
 .feature-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 94px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -177,11 +177,6 @@ body {
 }
 
 /* -------------- WORK ---------------- */
-
-.work {
-  margin-top: 0px;
-  margin-bottom: 94px;
-}
 
 .work-title {
   margin-top: 0;
@@ -203,13 +198,7 @@ body {
 /* ---------- TEAM ------------ */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-top: 0;
-  margin-bottom: 0;
-
   text-align: center;
-
   background-color: var(--primary-bgr-color);
 }
 
@@ -288,7 +277,7 @@ body {
 
 .portfolio-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 
   outline: 2px solid green;
 
@@ -300,7 +289,7 @@ body {
 
 .portfolio-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   outline: 2px solid red;
 
@@ -310,8 +299,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.portfolio-list-item > .link {
+.portfolio.link > img {
   display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  outline: 3px solid yellow;
 }
 
 /* ---------- FOOTER ----------- */
