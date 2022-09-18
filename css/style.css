@@ -37,6 +37,11 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -----HEADER------- */
 
 .logo {
@@ -88,7 +93,7 @@ body {
 
 .hero {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
 
   text-align: center;
   background-color: var(--secondary-bgr-color);
@@ -134,7 +139,7 @@ body {
 
 .feature {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom:0;
   text-align: center;
 }
 
@@ -192,7 +197,7 @@ body {
 }
 
 .work-list-item > img {
-  display:block
+  display: block;
 }
 
 /* ---------- TEAM ------------ */
@@ -262,7 +267,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   letter-spacing: 0.03em;
   background: var(--primary-bgr-color);
   color: var(--primary-text-color);
@@ -283,6 +287,11 @@ body {
 }
 
 .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  outline: 2px solid green;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -290,10 +299,19 @@ body {
 }
 
 .portfolio-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  outline: 2px solid red;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.portfolio-list-item > .link {
+  display: block;
 }
 
 /* ---------- FOOTER ----------- */
