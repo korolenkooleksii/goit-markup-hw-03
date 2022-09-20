@@ -5,6 +5,10 @@
   --primary-white-color: #ffffff;
   --primary-bgr-color: #f5f4fa;
   --secondary-bgr-color: #2f303a;
+  --logo-primary-color: #2196f3;
+  --logo-top-color: #000000;
+  --logo-bottom-color: #ffffff;
+  --accent-hero-btn: #188ce8;
 }
 
 /* цвет и фон страницы */
@@ -14,19 +18,18 @@ body {
   color: var(--primary-text-color);
 }
 
-.conteiner {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 
-  border: 2px dashed red;
+  border: 2px dashed tomato;
 }
 
 /* ------ убираем точки в списке --------- */
 .list {
   list-style: none;
-
   padding: 0;
   margin: 0;
 }
@@ -37,6 +40,12 @@ body {
   text-decoration: none;
 }
 
+.centered {
+  text-align: center;
+}
+
+/* ------------геометрия section------------ */
+
 .section {
   margin-top: 0;
   margin-bottom: 0;
@@ -46,8 +55,12 @@ body {
 
 /* -----HEADER------- */
 
+.header {
+  display: flex;
+}
+
 .logo {
-  color: var(--accent-color);
+  color: var(--logo-primary-color); 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -58,7 +71,11 @@ body {
 }
 
 .logo-black {
-  color: #000000;
+  color: var(--logo-top-color)
+}
+
+.nav {
+  /* display: flex; */
 }
 
 .nav-link {
@@ -78,7 +95,16 @@ body {
   color: var(--accent-color);
 }
 
+.nav-contacts {
+  /* display: flex; */
+}
+
+.nav-list {
+  /* display: flex; */
+}
+
 .nav-contacts .link {
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,7 +123,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  text-align: center;
+
   background-color: var(--secondary-bgr-color);
 }
 
@@ -115,6 +141,7 @@ body {
 }
 
 .hero-button {
+  
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
@@ -134,14 +161,10 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  background: #188ce8;
+  background: var(--accent-hero-btn);
 }
 
 /* ------- FEATURE ------- */
-
-.feature-list {
-  text-align: center;
-}
 
 .visually-hidden {
   position: absolute;
@@ -156,6 +179,14 @@ body {
   overflow: hidden;
 }
 
+.feature-list {
+  /* margin-top: 0;
+  margin-bottom: 94px;
+  margin-left: 215px;
+  margin-right: 215px; */
+  margin: 0 0 94px 0;
+}
+
 .feature-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -168,7 +199,7 @@ body {
 
 .feature-text {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
 
   font-size: 14px;
   line-height: 1.71;
@@ -187,7 +218,6 @@ body {
 .team-title {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -198,7 +228,6 @@ body {
 /* ---------- TEAM ------------ */
 
 .team {
-  text-align: center;
   background-color: var(--primary-bgr-color);
 }
 
@@ -213,12 +242,11 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
 
-  background-color: yellowgreen;
+  outline: 2px solid tomato;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -279,7 +307,7 @@ body {
   margin-top: 0;
   margin-bottom: 4px;
 
-  outline: 2px solid green;
+  outline: 1px solid green;
 
   font-size: 18px;
   line-height: 2;
@@ -291,7 +319,7 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
 
-  outline: 2px solid red;
+  outline: 1px solid red;
 
   font-size: 16px;
   line-height: 1.88;
@@ -299,12 +327,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.portfolio.link > img {
+.portfolio > img {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
 
-  outline: 3px solid yellow;
+  outline: 1px solid yellow;
 }
 
 /* ---------- FOOTER ----------- */
@@ -314,7 +342,7 @@ body {
 }
 
 .logo-white {
-  color: #ffffff;
+  color: var(--logo-bottom-color);
 }
 
 .footer-list-item .link {
