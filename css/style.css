@@ -120,7 +120,6 @@ body {
 
 .nav-main {
   display: flex;
-  align-items: center;
 }
 
 .nav {
@@ -130,24 +129,16 @@ body {
 
 .nav-list {
   display: flex;
+  align-items: center;
   margin-left: 93px;
-}
-
-/* --задали mardgin всем кроме последнего элемента */
-
-.nav-list-item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .nav-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
-}
-
-/* --задали mardgin всем кроме последнего элемента */
-
-.nav-contacts-item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .nav-contacts-item .link {
@@ -286,6 +277,8 @@ body {
 .team-title {
   margin-bottom: 50px;
 }
+
+/* width: calc((100% - 60px) / 3); */
 
 .team-list {
   display: flex;
