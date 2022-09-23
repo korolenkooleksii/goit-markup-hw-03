@@ -415,6 +415,8 @@ body {
 
 .footer-list {
   margin-top: 20px;
+  
+  max-width: 231px;
 }
 
 .mail {
