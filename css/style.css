@@ -215,13 +215,14 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.feature {
+  padding-bottom: 0;
+}
 
 .feature-list {
   display: flex;
   justify-content: center;
   gap: 30px;
-
-  margin-bottom: 94px;
 }
 
 .feature-list-item {
@@ -363,7 +364,6 @@ body {
   width: calc((100% - 60px) / 3);
 
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-item:hover,
@@ -373,6 +373,8 @@ body {
 
 .sign {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 1px solid transparent;
 }
 
 .portfolio-title {
@@ -410,10 +412,8 @@ body {
   padding: 0;
 }
 
-.footer-list {
+.address {
   margin-top: 20px;
-  
-  max-width: 231px;
 }
 
 .mail {
