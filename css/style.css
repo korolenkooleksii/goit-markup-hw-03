@@ -37,6 +37,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 /* цвет и фон страницы */
 body {
   font-family: "Roboto", sans-serif;
@@ -53,12 +58,6 @@ body {
 
 .current {
   color: var(--accent-color);
-}
-
-/* ----- убираем подчеркивания в ссылках---------  */
-
-.link {
-  text-decoration: none;
 }
 
 .centered {
@@ -91,7 +90,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .logo-black {
